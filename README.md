@@ -35,7 +35,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 
 ## 🚀 Live Demo
 
-Visit the live website: [Portfolio Website](https://shubhamportfolio-444.netlify.in)
+Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-website/)
 
 ## 📧 Contact
 
