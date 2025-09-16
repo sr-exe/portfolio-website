@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Rathod - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
+        .resume-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            color: #333;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #2563eb;
+        }
+        
+        .resume-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+        
+        .resume-title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .resume-contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 10px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+        }
+        
+        .resume-section {
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 8px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 8px;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3px;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 12px;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            font-size: 10px;
+        }
+        
+        .item-date {
+            color: #2563eb;
+            font-weight: 500;
+            font-size: 10px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        
+        .skill-category h4 {
+            color: #2563eb;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 11px;
+        }
+        
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .skill-list li {
+            padding: 1px 0;
+            color: #666;
+            font-size: 10px;
+        }
+        
+        .skill-list li:before {
+            content: "• ";
+            color: #2563eb;
+            font-weight: bold;
+        }
+        
+        .experience-item ul {
+            margin: 3px 0 0 15px;
+            padding: 0;
+        }
+        
+        .experience-item ul li {
+            font-size: 10px;
+            margin-bottom: 2px;
+            color: #666;
+        }
+        
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+        
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #f8fafc;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-btn:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        @media print {
+            .download-btn, .back-btn {
+                display: none !important;
+            }
+            
+            .resume-container {
+                max-width: none;
+                margin: 0;
+                padding: 15px;
+                box-shadow: none;
+                background: white !important;
+                color: #333 !important;
+            }
+            
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .resume-contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                gap: 2px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+    
+    <button onclick="downloadPDF()" class="download-btn">
+        <i class="fas fa-download"></i> Download PDF
+    </button>
+
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1 class="resume-name">Shubham Rathod</h1>
+            <p class="resume-title">Computer Science Engineering Student</p>
+            <div class="resume-contact">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>shubhamrathod4040@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 7020989109</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nagpur, Maharashtra, India</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/shubham-rathod-337b40384</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/sr-exe</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Diploma in Computer Science & Engineering</div>
+                        <div class="item-subtitle">Priyadarshini Polytechnic, Nagpur (MSBTE) - 83.60%</div>
+                    </div>
+                    <div class="item-date">Sep 2022 - Aug 2025</div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Bachelor of Technology in Computer Science</div>
+                        <div class="item-subtitle">Currently Pursuing</div>
+                    </div>
+                    <div class="item-date">2025 - Present</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming</h4>
+                    <ul class="skill-list">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Web Technologies</h4>
+                    <ul class="skill-list">
+                        <li>HTML5/CSS3</li>
+                        <li>Responsive Design</li>
+                        <li>Bootstrap</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Database & Tools</h4>
+                    <ul class="skill-list">
+                        <li>MySQL</li>
+                        <li>Database Design</li>
+                        <li>Git/GitHub</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <ul class="skill-list">
+                        <li>Communication</li>
+                        <li>Team Management</li>
+                        <li>Problem Solving</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">BIOMARK - Smart Attendance System</div>
+                        <div class="item-subtitle">Advanced Authentication & Security System</div>
+                    </div>
+                    <div class="item-date">March 2024</div>
+                </div>
+                <ul>
+                    <li>Multi-layer authentication: Face recognition, fingerprint scanning, device recognition</li>
+                    <li>Location-based verification to prevent proxy attendance</li>
+                    <li>Admin dashboard with real-time monitoring and Excel export</li>
+                    <li>Secure database integration with MySQL for data management</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Professional Portfolio Website</div>
+                        <div class="item-subtitle">Responsive Web Development</div>
+                    </div>
+                    <div class="item-date">2024</div>
+                </div>
+                <ul>
+                    <li>Modern responsive design with 3D animations and interactive elements</li>
+                    <li>Professional UI/UX with dark/light mode functionality</li>
+                    <li>Optimized performance and cross-browser compatibility</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="section-title">Achievements & Interests</h2>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="flex: 1; margin-right: 20px;">
+                    <div class="experience-item">
+                        <div class="item-title" style="font-size: 11px;">Academic Excellence</div>
+                        <div class="item-subtitle">83.60% in Diploma CSE</div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="item-title" style="font-size: 11px;">Project Success</div>
+                        <div class="item-subtitle">BIOMARK System Completion</div>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <div style="color: #666; font-size: 10px;">
+                        <strong>Interests:</strong> Music, Gaming, Tech Innovation, Continuous Learning
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function downloadPDF() {
+            // Hide buttons for clean PDF
+            document.querySelector('.download-btn').style.display = 'none';
+            document.querySelector('.back-btn').style.display = 'none';
+            
+            // Print the page
+            window.print();
+            
+            // Show buttons back after print dialog
+            setTimeout(() => {
+                document.querySelector('.download-btn').style.display = 'block';
+                document.querySelector('.back-btn').style.display = 'block';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
