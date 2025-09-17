@@ -4,7 +4,6 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 
 ## 🌟 Features
 
-- **Dark/Light Mode Toggle** - Professional theme switching
 - **3D Interactive Profile Card** - Hover to flip and see tech stack
 - **Responsive Design** - Works perfectly on all devices
 - **Smooth Animations** - Professional transitions and effects
