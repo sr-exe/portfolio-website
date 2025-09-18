@@ -36,7 +36,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 
 Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-website/)
 
-## 📧 Contact
+## 📧 Contact >>
 
 - **Email**: shubhamrathod4040@gmail.com
 - **Phone**: +91 7020989109
