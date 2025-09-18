@@ -9,7 +9,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 - **Smooth Animations** - Professional transitions and effects
 - **Project Showcase** - Featured projects with live links
 - **Contact Form** - Functional contact form for inquiries
-- **Certificate Display** - MSBTE State Level Competition certificate
+- **Certificate Display** - MSBTE State Level Competition certificate.....
 
 ## 🏆 Achievements
 
