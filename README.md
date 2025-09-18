@@ -24,7 +24,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 - **Fonts**: Google Fonts (Poppins)
 - **Animations**: CSS Transitions & Transforms
 
-## 📱 Sections
+## 📱 Sections >>
 
 1. **Hero Section** - Introduction with animated background
 2. **About** - Personal information and 3D profile card
