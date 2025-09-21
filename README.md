@@ -47,6 +47,6 @@ Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-w
 
 Nagpur, Maharashtra, India
 
----
+---------------
 
 © 2025 Shubham Rathod. All rights reserved.
