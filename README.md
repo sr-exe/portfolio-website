@@ -1,4 +1,3 @@
-# Shubham Rathod - Professional Portfolio Website
 
 A modern, responsive portfolio website showcasing my skills, projects, and achievements as a Computer Science Engineering student.
 ..
@@ -35,6 +34,8 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 ## 🚀 Live Demo
 
 Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-website/)
+
+<img width="1891" height="869" alt="web png" src="https://github.com/user-attachments/assets/379b3dfc-b2df-421d-b01e-92e742191bf5" /># Shubham Rathod - Portfolio Website
 
 ## 📧 Contact 
 
