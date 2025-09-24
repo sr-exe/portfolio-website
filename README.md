@@ -24,7 +24,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 - **Fonts**: Google Fonts (Poppins)
 - **Animations**: CSS Transitions & Transforms
 
-## 📱 Sections >>
+## 📱 Sections 
 
 1. **Hero Section** - Introduction with animated background
 2. **About** - Personal information and 3D profile card
@@ -32,11 +32,11 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 4. **Projects** - Featured projects with live demos
 5. **Contact** - Contact form and social links
 
-## 🚀 Live Demo >>
+## 🚀 Live Demo 
 
 Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-website/)
 
-## 📧 Contact >>
+## 📧 Contact 
 
 - **Email**: shubhamrathod4040@gmail.com
 - **Phone**: +91 7020989109
@@ -47,6 +47,6 @@ Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-w
 
 Nagpur, Maharashtra, India
 
----------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 © 2025 Shubham Rathod. All rights reserved.
