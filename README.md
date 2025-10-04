@@ -13,7 +13,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and achie
 ## 🏆 Achievements
 
 - **BIOMARK Project** - participation in MSBTE State Level Project Competition 2025, Nagpur Region
-- Location-based authentication system with face recognition and fingerprint scanning.....
+- Location-based authentication system with face recognition and fingerprint scanning and project is ongoing.....
 
 ## 🛠️ Technologies Used
 
