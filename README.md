@@ -50,4 +50,4 @@ Nagpur, Maharashtra, India
 
 -----------------------------------------------------------------------------------------------------------
 
-© 2025 Shubham Rathod. All rights reserved.
+© 2026 Shubham Rathod. All rights reserved.
