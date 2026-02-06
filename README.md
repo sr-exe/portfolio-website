@@ -40,7 +40,6 @@ Visit the live website: [Portfolio Website](https://sr-exe.github.io/portfolio-w
 ## 📧 Contact 
 
 - **Email**: shubhamrathod4040@gmail.com
-- **Phone**: +91 7020989109
 - **LinkedIn**: [Shubham Rathod](https://www.linkedin.com/in/shubham-rathod-337b40384)
 - **GitHub**: [sr-exe](https://github.com/sr-exe)
 
